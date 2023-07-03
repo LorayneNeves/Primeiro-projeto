@@ -9,38 +9,87 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-logo" src="logoname.jpeg" alt="Ana">
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-opcao" href="https://www.facebook.com/profile.php?id=100085442623864"> Facebook </a>
-            <a class="cabecalho-opcao">Saiba Mais </a>
+    <header id="header">
+        <a id="logo"><img height="50px" src="image/image-page/bottts.svg"></a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="/">Sobre</a></li>
+            <li><a href="/">Produtos</a></li>
+            <!-- <li><a href="/">Portfólio</a></li> -->
+            <li><a href="https://www.facebook.com/messages/t/102855222576268">Contato</a></li>
+          </ul>
         </nav>
-    </header>
-
+      </header>
+            <!-- <a class="cabecalho-opcao" href="https://www.facebook.com/profile.php?id=100085442623864"> Facebook </a> 
+            <button type="submit"class="cabecalho-opcao">Dicas</button>-->
     <main class="conteudo">
         <section class="conteudo-1">
             <div class="conteudo-1-escrito">
                 <h1 class="conteudo-1-escrito-titulo"><b>ChatBot Ana</b></h1>
                 <h2 class="conteudo-1-escrito-subtitulo">Aprenda a manter seus dados seguros de maneira pratica e divertida</h2>
-                <a href="https://www.facebook.com/messages/t/102855222576268"class="conteudo-1-escrito-button"> Conversar com Ana</a>
             </div>
-            <img class="conteudo-1-img" src="logoimg.jpeg" alt="Imagem da Ana" height="255">
+            <img class="conteudo-1-img" src="image/image-page/protecao1.png" alt="Imagem da Ana">
+            
+            
         </section>
-        
-        <section class="conteudo-2">
+        <div class="slider">
+
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+
+                <div class="slide first">
+                    <img src="image/image-page/Cybersecurity Lifecycle.webp" alt="img1">
+                </div>
+                <div class="slide">
+                    <img src="image/image-page/security-home.png" alt="img2">
+                </div>
+                <div class="slide3">
+                    <img src="image/image-page/security-praticas.png" alt="img3">
+                </div>
+                <div class="slide4">
+                    <img src="image/image-page/protecao.png" alt="img4">
+                </div>
+
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1"class="manual-btn"></label>
+                <label for="radio2"class="manual-btn"></label>
+                <label for="radio3"class="manual-btn"></label>
+                <label for="radio4"class="manual-btn"></label>
+            </div>
+        </div>
+        <!---->
+       <section class="conteudo-2">
             <h3 class="conteudo-2-titulo">O que a Ana faz?</h3>
            
             <p class="conteudo-2-paragrafo">1. <strong>Te auxilia dando dicas de como manter seus dados seguros</strong></p>
             <p class="conteudo-2-paragrafo">2. <strong>Tira suas duvidas sobre segurança da informação</strong></p>
             <p class="conteudo-2-paragrafo">3. <strong>Conscientiza usuários e empresas sobre a melhor forma de se proteger contra possíveis ameaças</strong></p>
+            <a href="https://www.facebook.com/messages/t/102855222576268"class="conteudo-1-escrito-button"> conversar com ana</a>
         </section>
+        
     </main>
 
 
     <footer class="rodape">
-        <img class="rodape-img" src="logoname.jpeg" height="74" />
+        <img class="rodape-img" src="image/image-page/bottts.svg"/>
     </footer>
-
+<script src="script.js"></script>
 
 </body>
 </html>
