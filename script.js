@@ -1,16 +1,5 @@
-let count =1;
-document.getElementById("radio1").checked = true;
-
-setInterval(function(){
-    nextImage();
-}, 5000)
-function nextImage(){
-    count++;
-    if(count>4){
-        count =1;
-    }
-    document.getElementById("radio"+count).checked = true;
-}
+const button = document.querySelector('.page-button');
+const form = document.querySelector('.page-form');
 
 const btnMobile = document.getElementById('btn-mobile');
 
@@ -29,3 +18,26 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+const AboutButton = (event) => {
+  event.preventDefault();
+  window.location.href = 'page.html';
+}
+
+form.addEventListener('submit', AboutButton);
+
+
+let count =1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function(){
+    nextImage();
+}, 5000)
+function nextImage(){
+    count++;
+    if(count>4){
+        count =1;
+    }
+    document.getElementById("radio"+count).checked = true;
+}
